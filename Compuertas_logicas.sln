@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compuertas logicas", "Compuertas logicas\Compuertas logicas.csproj", "{E54D410D-ACC4-429F-9BDF-FB865042D49E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompuertasTest", "CompuertasTest\CompuertasTest.csproj", "{5ABC9218-8DA0-4A53-9A43-3D8598F466F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E54D410D-ACC4-429F-9BDF-FB865042D49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54D410D-ACC4-429F-9BDF-FB865042D49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54D410D-ACC4-429F-9BDF-FB865042D49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54D410D-ACC4-429F-9BDF-FB865042D49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABC9218-8DA0-4A53-9A43-3D8598F466F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABC9218-8DA0-4A53-9A43-3D8598F466F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABC9218-8DA0-4A53-9A43-3D8598F466F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABC9218-8DA0-4A53-9A43-3D8598F466F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

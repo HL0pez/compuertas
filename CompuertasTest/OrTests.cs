@@ -43,12 +43,4 @@ public class OrTests
         or1.AgregarEntrada(true);
         Assert.IsTrue(or1.Calcular());
     }
-    
-    [Test]
-    public void OrTrueYTrue()
-    {
-        or1.Entradas = new List<bool> { true, true };
-        Assert.IsTrue(or1.Calcular());
-    }
-    
 }

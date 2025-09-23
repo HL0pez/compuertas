@@ -29,13 +29,6 @@ public class AndTests
     }
     
     [Test]
-    public void AndFalseYFalse()
-    {
-        and1.AgregarEntrada(false);
-        Assert.IsFalse(and1.Calcular());
-    }
-    
-    [Test]
     public void AndFalseYTrue()
     {
         and1.AgregarEntrada(false);

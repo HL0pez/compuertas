@@ -2,13 +2,11 @@ namespace Compuertas_logicas;
 
 public class Or: ICompuerta
 {
-    public string Nombre { get; set; }
     public List<bool> Entradas { get; set; }
 
-    public Or(string nombre, bool primerEntrada)
+    public Or(bool entrada1, bool entrada2)
     {
-        this.Nombre = nombre;
-        this.Entradas = new List<bool>{primerEntrada};
+        this.Entradas = new List<bool>{entrada1,entrada2};
     }
     public bool Calcular()
     {

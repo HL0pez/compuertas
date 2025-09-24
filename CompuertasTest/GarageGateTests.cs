@@ -3,29 +3,29 @@ using Compuertas_logicas;
 
 public class GarageGateTests
 {
-    private GarageGate puerta;
+    private GarageGate _puerta;
     
     [SetUp]
     public void SetUp()
     {
-        puerta = new GarageGate();
+        _puerta = new GarageGate();
     }
 
     [Test]
     public void CasoVerdadero1()
     {
-        Assert.That(true,Is.EqualTo(puerta.AbrirPuerta(true,true,true)));
+        Assert.That(_puerta.AbrirPuerta(true,true,true),Is.EqualTo(true));
     }
     
     [Test]
     public void CasoVerdadero2()
     {        
-        Assert.That(true,Is.EqualTo(puerta.AbrirPuerta(false,false,true)));
+        Assert.That(_puerta.AbrirPuerta(false,false,true),Is.EqualTo(true));
     }
     
     [Test]
     public void CasoFalso()
     {
-        Assert.That(false,Is.EqualTo(puerta.AbrirPuerta(true,false,true)));
+        Assert.That(_puerta.AbrirPuerta(true,false,true),Is.EqualTo(false));
     }
 }

@@ -1,16 +1,12 @@
-using System.Security.Cryptography;
-
 namespace Compuertas_logicas;
 
 public class And : ICompuerta
 {
-    public string Nombre { get; set; }
     public List<bool> Entradas { get; set; }
 
-    public And(string name, bool primerEntrada)
+    public And(bool entrada1, bool entrada2)
     {
-        this.Nombre = name;
-        this.Entradas = new List<bool>{primerEntrada};
+        this.Entradas = new List<bool>{entrada1,entrada2};
     }
 
     public bool Calcular()

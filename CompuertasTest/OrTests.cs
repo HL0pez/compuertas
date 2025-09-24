@@ -3,44 +3,34 @@ using Compuertas_logicas;
 
 public class OrTests
 {
-    private Or or1;
+    private Or _or1;
 
 [SetUp]
     public void Setup()
     { 
-        or1 = new Or("or", false);
-    }
-    
-    [Test]
-    public void Constructor()
-    {
-        string nombre = "nombre";
-        bool entrada = false;
-
-        Or or2 = new Or(nombre, entrada);
-        Assert.That(or2.Nombre, Is.EqualTo(nombre));
+        _or1 = new Or(false,false);
     }
 
     [Test]
     public void OrAgregarEntrada()
     {
-        int entradasIniciales = or1.Entradas.Count;
-        or1.AgregarEntrada(false);
-        int cantEntradas = or1.Entradas.Count;
+        int entradasIniciales = _or1.Entradas.Count;
+        _or1.AgregarEntrada(false);
+        int cantEntradas = _or1.Entradas.Count;
         Assert.That(cantEntradas,Is.EqualTo(entradasIniciales + 1));
     }
     
     [Test]
     public void OrFalseYFalse()
     {
-        or1.AgregarEntrada(false);
-        Assert.IsFalse(or1.Calcular());
+        _or1.AgregarEntrada(false);
+        Assert.IsFalse(_or1.Calcular());
     }
     
     [Test]
     public void OrFalseYTrue()
     {
-        or1.AgregarEntrada(true);
-        Assert.IsTrue(or1.Calcular());
+        _or1.AgregarEntrada(true);
+        Assert.IsTrue(_or1.Calcular());
     }
 }
